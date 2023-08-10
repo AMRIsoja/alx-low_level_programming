@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Check if CFILE is set
+if [ -z "$CFILE" ]; then
+    echo "Error: CFILE variable is not set"
+    exit 1
+fi
+
+# Extract filename without extension
+FILENAME=$(basename -- "$CFILE")
+FILENAME="${FILENAME%.*}"
+
+# Generate assembly code using gcc and save to output file
+gcc -S -masm=intel "$CFILE" -o "$FILENAME.s"
