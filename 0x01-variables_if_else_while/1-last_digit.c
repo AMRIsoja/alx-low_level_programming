@@ -5,7 +5,7 @@
 /**
  * main - Entry point
  *
- * Description: Assigns a random number to the variable n and prints the last digit.
+ * Description
  *
  * Return: Always 0 (Success)
  */
