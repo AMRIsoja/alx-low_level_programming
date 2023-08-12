@@ -5,7 +5,6 @@
 /**
  * main - Entry point
  *
- * Description: Generates a random number and determines if it's positive, zero, or negative.
  *
  * Return: Always 0 (Success)
  */
