@@ -1,7 +1,9 @@
 #include "main.h"
-/** this is just
- *some description
- *to complete betty documantation
+
+/**
+ * main - Entry point of the program.
+ *
+ * Return: Always returns 0.
  */
 int main(void) {
     _putchar('_');
