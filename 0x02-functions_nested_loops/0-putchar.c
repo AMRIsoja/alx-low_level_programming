@@ -1,9 +1,10 @@
 #include <stdio.h>
-/**
- *this is project
- *is a hard project
- *but I will try
- */
+#include "main.h"
+
+void _putchar(char c) {
+  putchar(c);
+}
+
 int main() {
   _putchar('_');
   _putchar('p');
