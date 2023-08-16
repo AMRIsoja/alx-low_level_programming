@@ -12,44 +12,14 @@
 int _putchar(char c);
 
 /**
- * _putchar - Writes a character to the standard output (stdout).
- *
- * @c: The character to be written.
- *
- * Return: On success, returns the number of characters written.
- *         On error, returns -1 and sets errno appropriately.
- */
-int _putchar(char c);
-
-/**
  * print_alphabet - Prints the alphabet in lowercase.
  */
 void print_alphabet(void);
 
 /**
- * _putchar - Writes a character to the standard output (stdout).
- *
- * @c: The character to be written.
- *
- * Return: On success, returns the number of characters written.
- *         On error, returns -1 and sets errno appropriately.
- */
-int _putchar(char c);
-
-/**
  * print_alphabet_x10 - Prints the alphabet in lowercase, ten times.
  */
 void print_alphabet_x10(void);
-
-/**
- * _putchar - Writes a character to the standard output (stdout).
- *
- * @c: The character to be written.
- *
- * Return: On success, returns the number of characters written.
- *         On error, returns -1 and sets errno appropriately.
- */
-int _putchar(char c);
 
 /**
  * _islower - Checks if a character is lowercase.
@@ -59,16 +29,6 @@ int _putchar(char c);
  * Return: 1 if c is lowercase, 0 otherwise.
  */
 int _islower(int c);
-
-/**
- * _putchar - Writes a character to the standard output (stdout).
- *
- * @c: The character to be written.
- *
- * Return: On success, returns the number of characters written.
- *         On error, returns -1 and sets errno appropriately.
- */
-int _putchar(char c);
 
 /**
  * _isalpha - Checks if a character is an alphabetic character.
@@ -98,6 +58,15 @@ int print_sign(int n);
  * Return: The absolute value of n.
  */
 int _abs(int n);
+
+/**
+ * print_last_digit - Prints the last digit of a number.
+ *
+ * @n: The number to extract the last digit from.
+ *
+ * Return: The value of the last digit.
+ */
+int print_last_digit(int n);
 
 #endif /* MAIN_H */
 
