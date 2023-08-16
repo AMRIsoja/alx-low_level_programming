@@ -70,6 +70,15 @@ int _abs(int n);
 int _putchar(char c);
 
 /**
+ * putchar declaration
+ *
+ * description I suffer when trying to understand this
+ *
+ * return 
+ */
+int putchar(char c);
+
+/**
  * print_last_digit - Prints the last digit of a number.
  *
  * @n: The number to extract the last digit from.
