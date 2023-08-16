@@ -15,8 +15,7 @@ void times_table(void)
 
                         if (col == 0)
                         {
-                                _putchar('0');
-                                _putchar(' ');
+                                _putchar(product + '0');
                         }
                         else
                         {
@@ -43,4 +42,3 @@ void times_table(void)
                 _putchar('\n');
         }
 }
-
