@@ -41,5 +41,24 @@ int _putchar(char c);
  */
 void print_alphabet_x10(void);
 
+/**
+ * _putchar - Writes a character to the standard output (stdout).
+ *
+ * @c: The character to be written.
+ *
+ * Return: On success, returns the number of characters written.
+ *         On error, returns -1 and sets errno appropriately.
+ */
+int _putchar(char c);
+
+/**
+ * _islower - Checks if a character is lowercase.
+ *
+ * @c: The character to be checked.
+ *
+ * Return: 1 if c is lowercase, 0 otherwise.
+ */
+int _islower(int c);
+
 #endif /* MAIN_H */
 
