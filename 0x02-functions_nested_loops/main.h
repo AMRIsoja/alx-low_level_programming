@@ -60,16 +60,6 @@ int print_sign(int n);
 int _abs(int n);
 
 /**
- * _putchar - Writes a character to the standard output (stdout).
- *
- * @c: The character to be written.
- *
- * Return: On success, returns the number of characters written.
- * On error, returns -1 and sets errno appropriately.
- */
-int _putchar(char c);
-
-/**
  * print_last_digit - Prints the last digit of a number.
  *
  * @n: The number to extract the last digit from.
