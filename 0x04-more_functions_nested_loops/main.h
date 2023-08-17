@@ -12,10 +12,11 @@
 int _putchar(char c);
 
 /**
- * Description: this isa function to find id digit or no
- *  
- * if it's digit  otherwise 
+ * Description: this is a function to check if a cracter is a digit
+ * 
+ * @c: the carackter to be checked
  *
+ * return 1 if c is a digit, 0 otherwise
  */
 int _isdigit(int c);
 
