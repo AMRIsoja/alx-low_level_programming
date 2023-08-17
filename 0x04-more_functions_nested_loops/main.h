@@ -2,11 +2,12 @@
 #define MAIN_H
 
 /**
- * Description: this isa function to find id digit or not
- *
- * if it's digit 0 otherwise 1
+ * Description: this isa function to find id digit or no
+ *  
+ * if it's digit  otherwise 
  *
  */
 int _isdigit(int c);
 
 #endif /* MAIN_H */
+
