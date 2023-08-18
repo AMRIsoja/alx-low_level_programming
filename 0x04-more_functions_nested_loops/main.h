@@ -60,5 +60,11 @@ void more_numbers(void);
  */
 void print_line(int n);
 
+/**
+ * print_diagonal - Draws a diagonal line in the terminal.
+ * @n: The number of times the character '\' should be printed.
+ */
+void print_diagonal(int n);
+
 #endif /* MAIN_H */
 
