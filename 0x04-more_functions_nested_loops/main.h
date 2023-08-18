@@ -79,5 +79,11 @@ void print_square(int size);
  */
 int main(void);
 
+/**
+ * print_triangle - Prints a triangle of a given size.
+ * @size: The size of the triangle.
+ */
+void print_triangle(int size);
+
 #endif /* MAIN_H */
 
