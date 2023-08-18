@@ -66,5 +66,11 @@ void print_line(int n);
  */
 void print_diagonal(int n);
 
+/**
+ * print_square - Prints a square using the '#' character.
+ * @size: The size of the square.
+ */
+void print_square(int size);
+
 #endif /* MAIN_H */
 
