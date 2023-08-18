@@ -85,5 +85,12 @@ int main(void);
  */
 void print_triangle(int size);
 
+/**
+ * main - Finds and prints the largest prime factor of 612852475143.
+ *
+ * Return: Always 0.
+ */
+int main(void);
+
 #endif /* MAIN_H */
 
