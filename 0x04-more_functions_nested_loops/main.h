@@ -72,5 +72,12 @@ void print_diagonal(int n);
  */
 void print_square(int size);
 
+/**
+ * main - Prints numbers from 1 to 100, following Fizz-Buzz rules.
+ *
+ * Return: Always 0.
+ */
+int main(void);
+
 #endif /* MAIN_H */
 
