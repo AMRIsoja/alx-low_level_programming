@@ -12,6 +12,13 @@
 int _putchar(char c);
 
 /**
+ * Description: is to check is upper or not
+ *
+ * Return: 1 if c is uppercase, 0 otherwise.
+ */
+int _isupper(int c);
+
+/**
  * Description: this is a function to check if a cracter is a digit
  * 
  * @c: the carackter to be checked
