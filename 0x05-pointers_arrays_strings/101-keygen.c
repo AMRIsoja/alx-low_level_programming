@@ -3,18 +3,18 @@
 #include <time.h>
 
 /**
- * you don't have to blame a hacker blame the code
+ * keygen password creator
  *
- * keygen program that generate a valid password
+ * therefore you should be carefull
  */
 int main(void)
 {
     srand(time(NULL)); /* Initialize the random number generator with the current time */
 
-    /* Generate a random password of length 6 */
     char password[7]; /* 6 characters + null terminator */
+    int i;
 
-    for (int i = 0; i < 6; i++)
+    for (i = 0; i < 6; i++)
     {
         /* Generate a random character between 'A' and 'z' (inclusive) */
         password[i] = rand() % ('z' - 'A' + 1) + 'A';
