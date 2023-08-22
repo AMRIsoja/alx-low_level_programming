@@ -3,16 +3,16 @@
 #include <time.h>
 
 /**
- * keygen password creator
+ * keygen program
  *
- * therefore you should be carefull
+ * generate a random valid password
  */
 int main(void)
 {
-    srand(time(NULL)); /* Initialize the random number generator with the current time */
-
     char password[7]; /* 6 characters + null terminator */
     int i;
+
+    srand(time(NULL)); /* Initialize the random number generator with the current time */
 
     for (i = 0; i < 6; i++)
     {
