@@ -22,7 +22,7 @@ int _atoi(char *s)
 			is_number = 1;
 			if (result > (INT_MAX - (*s - '0')) / 10)
 			{
-				return (sign == 1) ? INT_MAX : INT_MIN;
+				return ((sign == 1) ? INT_MAX : INT_MIN);
 			}
 			result = result * 10 + (*s - '0');
 		}
