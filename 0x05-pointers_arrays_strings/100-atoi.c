@@ -11,8 +11,8 @@ int _atoi(char *s)
 {
 	int sign = 1;
 	int result = 0;
-	int is_number = 0; /* Flag to indicate 
-			      if at least one digit is found */
+	int is_number = 0; /* Flag to indicate */
+		/* if at least one digit is found */
 
 	while (*s)
 	{
@@ -27,8 +27,8 @@ int _atoi(char *s)
 			}
 			result = result * 10 + (*s - '0');
 		}
-		else if (is_number) /* Stop parsing if not a digit 
-				       and at least one digit is found */
+		else if (is_number) /* Stop parsing if not a digit */
+			/* and at least one digit is found */
 			break;
 		s++;
 	}
