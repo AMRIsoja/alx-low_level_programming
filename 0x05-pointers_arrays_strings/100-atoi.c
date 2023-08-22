@@ -1,5 +1,5 @@
 #include "main.h"
-#include <limits.h> /* Include the <limits.h> header for INT_MAX and INT_MIN */
+#include <limits.h>
 
 /**
  * _atoi - Converts a string to an integer.
@@ -9,34 +9,25 @@
  */
 int _atoi(char *s)
 {
-	int sign = 1; /* Default positive sign */
+	int sign = 1;
 	int result = 0;
+	int is_number = 0; /* Flag to indicate if at least one digit is found */
 
-	/* Skip leading whitespace */
-	while (*s == ' ')
-		s++;
-
-	/* Check for sign */
-	if (*s == '-' || *s == '+')
+	while (*s)
 	{
 		if (*s == '-')
-			sign = -1;
-		s++;
-	}
-
-	/* Convert digits to integer */
-	while (*s >= '0' && *s <= '9')
-	{
-		/* Check for overflow */
-		if (result > (INT_MAX - (*s - '0')) / 10)
+			sign *= -1;
+		else if (*s >= '0' && *s <= '9')
 		{
-			if (sign == 1)
-				return INT_MAX;
-			else
-				return INT_MIN;
+			is_number = 1;
+			if (result > (INT_MAX - (*s - '0')) / 10)
+			{
+				return (sign == 1) ? INT_MAX : INT_MIN;
+			}
+			result = result * 10 + (*s - '0');
 		}
-
-		result = result * 10 + (*s - '0');
+		else if (is_number) /* Stop parsing if not a digit and at least one digit is found */
+			break;
 		s++;
 	}
 
