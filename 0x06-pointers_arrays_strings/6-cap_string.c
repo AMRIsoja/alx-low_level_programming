@@ -13,17 +13,20 @@ char *cap_string(char *str)
 
 	while (*ptr)
 	{
-		if (*ptr >= 'a' && *ptr <= 'z' && new_word)
+		if ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z'))
 		{
-			*ptr = *ptr - 'a' + 'A';
-			new_word = false;
+			if (new_word)
+			{
+				if (*ptr >= 'a' && *ptr <= 'z')
+					*ptr -= 32;
+				new_word = false;
+			}
+			else if (*ptr >= 'A' && *ptr <= 'Z')
+			{
+				*ptr += 32;
+			}
 		}
-		else if (*ptr >= 'A' && *ptr <= 'Z')
-		{
-		*ptr = *ptr - 'A' + 'a';
-		}
-
-		if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' ||
+		else if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' ||
 			*ptr == ',' || *ptr == ';' || *ptr == '.' ||
 			*ptr == '!' || *ptr == '?' || *ptr == '"' ||
 			*ptr == '(' || *ptr == ')' || *ptr == '{' || *ptr == '}')
