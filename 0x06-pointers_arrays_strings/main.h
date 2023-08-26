@@ -20,5 +20,15 @@ char *_strcat(char *dest, char *src);
  */
 char *_strncat(char *dest, char *src, int n);
 
+/**
+ * _strncpy - Copies a string, using at most n bytes from src
+ * @dest: Destination string
+ * @src: Source string
+ * @n: Maximum number of bytes to copy from src
+ *
+ * Return: Pointer to the resulting string `dest`
+ */
+char *_strncpy(char *dest, char *src, int n);
+
 #endif /* MAIN_H */
 
