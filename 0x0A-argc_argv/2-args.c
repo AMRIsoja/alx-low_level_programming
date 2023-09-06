@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * print arguments pass
+ * each argument per line
+ * return 0
+ */
 int main(int argc, char *argv[]) 
 {
 	int i;
