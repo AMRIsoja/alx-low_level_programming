@@ -4,9 +4,6 @@
 /**
  * Converts a binary string to an unsigned int.
  *
- * This function takes a binary string consisting of '0' and '1' characters
- * and converts it to an equivalent unsigned integer.
- *
  * @param b A pointer to the binary string to be converted.
  *
  * @return The converted unsigned integer. If the input string is NULL or
