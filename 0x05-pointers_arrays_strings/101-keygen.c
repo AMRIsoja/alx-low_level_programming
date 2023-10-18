@@ -1,34 +1,40 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 
-/**
- * keygen password program
- *
- * this generate valid random password
- */
-char* generatePassword() {
-    char* password = (char*)malloc(7); /* 6 characters + null terminator */
-    int i;
+#define ALPHABET_SIZE 62
 
-    srand(time(NULL)); /* Initialize the random number generator with the current time */
+char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
-    for (i = 0; i < 6; i++) {
-        /* Generate a random character between 'A' and 'z' (inclusive) */
-        password[i] = rand() % ('z' - 'A' + 1) + 'A';
-    }
-    password[6] = '\0'; /* Add null terminator to create a valid string */
+int main() {
+  int password_length;
+  char password[10];
 
-    return password;
-}
+  // Seed the random number generator with the current time.
+  srand(time(NULL));
 
-int main(void) {
-    char* password = generatePassword();
+  // Get the password length from the user.
+  printf("Enter the password length: ");
+  scanf("%d", &password_length);
+
+  // Generate a random password of the specified length.
+  for (int i = 0; i < password_length; i++) {
+    password[i] = alphabet[rand() % ALPHABET_SIZE];
+  }
+
+  // Get the password from the user.
+  char *user_password;
+  size_t user_password_length;
+  getline(&user_password, &user_password_length, stdin);
+
+  // Check if the password is valid.
+  if (strcmp(password, user_password) == 0) {
     printf("Tada! Congrats\n");
-
-    /* Don't forget to free the dynamically allocated memory */
-    free(password);
-
+    return 1;
+  } else {
+    printf("Wrong password\n");
     return 0;
+  }
 }
 
